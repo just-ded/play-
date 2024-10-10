@@ -1,0 +1,75 @@
+#text1 {
+    color: #da8787;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 10%;
+    left:33.5%;
+}
+
+#b1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    border: none;
+    height: 85px;
+    width: 270px;
+    font-size: 65px;
+    font-weight: bold;
+    border-radius: 18px;
+    background-color: #d35454;
+    box-shadow: 0 0 10px #999;
+}
+
+
+#b1:hover{
+    background-color: #df6d6d;
+    transition: background-color 0.3s ease;
+}
+
+#b1:active{
+    background-color: #d69090;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+#qf {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; 
+}
+
+.questionMark {
+    position: absolute;
+    bottom: 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(212, 144, 144);
+    opacity: 1;
+    transform: scale(0); 
+    animation: popAndFloat 4s ease forwards; 
+}
+@keyframes popAndFloat {
+    0% {
+        transform: scale(0); 
+        opacity: 0;
+    }
+    10% {
+        transform: scale(1.2); 
+        opacity: 1; 
+    }
+    20% {
+        transform: scale(1); 
+    }
+    100% {
+        transform: translateY(-100vh) scale(1); 
+        opacity: 0;
+    }
+}

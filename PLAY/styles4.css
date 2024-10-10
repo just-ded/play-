@@ -1,0 +1,122 @@
+#text1 {
+    color: #da8787;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 10%;
+    left:31.5%;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input {
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+}
+
+body {
+    margin: 0;
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin: 60px; 
+}
+
+label {
+    display: block;
+    margin-bottom: 20px; 
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #d35454;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px; 
+}
+
+button:hover {
+    background-color: #df6d6d;
+}
+#qf {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; 
+}
+
+.questionMark {
+    position: absolute;
+    bottom: 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(212, 144, 144);
+    opacity: 1;
+    transform: scale(0); 
+    animation: popAndFloat 4s ease forwards; 
+}
+@keyframes popAndFloat {
+    0% {
+        transform: scale(0); 
+        opacity: 0;
+    }
+    10% {
+        transform: scale(1.2); 
+        opacity: 1; 
+    }
+    20% {
+        transform: scale(1); 
+    }
+    100% {
+        transform: translateY(-100vh) scale(1); 
+        opacity: 0;
+    }
+}
+
+
+button:disabled {
+    background-color: #cccccc; 
+    cursor: not-allowed;
+}
+
+button:hover:enabled {
+    background-color: #d35454; }
+
+    #submitButton {
+        position: relative;
+        top: 10px;
+    }

@@ -1,0 +1,108 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+#question1 {
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 75%;
+    left: 27%;
+    border: none;
+    height: 85px;
+    width: 270px;
+    font-size: 65px;
+    font-weight: bold;
+    border-radius: 18px;
+    background-color: #d35454;
+    box-shadow: 0 0 10px #999;
+}
+
+#question1:hover {
+    background-color: #df6d6d ;
+    transition: background-color 0.3s ease;
+}
+
+#question1:active {
+    background-color: #d69090;
+}
+
+#q1 {
+    color: #da8787;
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 10%;
+    left:26.5%;
+}
+
+#wait1 {
+    width: 335px;
+    height: 335px;
+    border-radius: 8px;
+    position: absolute;
+    top: 29%;
+    left: 38.5%;
+}
+
+#qf {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; 
+}
+
+.questionMark {
+    position: absolute;
+    bottom: 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(212, 144, 144);
+    opacity: 1;
+    transform: scale(0); 
+    animation: popAndFloat 4s ease forwards; 
+}
+@keyframes popAndFloat {
+    0% {
+        transform: scale(0); 
+        opacity: 0;
+    }
+    10% {
+        transform: scale(1.2); 
+        opacity: 1; 
+    }
+    20% {
+        transform: scale(1); 
+    }
+    100% {
+        transform: translateY(-100vh) scale(1); 
+        opacity: 0;
+    }
+}
+
+#question2 {
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 75%;
+    left: 54%;
+    border: none;
+    height: 85px;
+    width: 270px;
+    font-size: 65px;
+    font-weight: bold;
+    border-radius: 18px;
+    background-color: #d35454;
+    box-shadow: 0 0 10px #999;
+}
+
+#question2:hover {
+    background-color: #df6d6d ;
+    transition: background-color 0.3s ease;
+}
+
+#question2:active {
+    background-color: #d69090;
+}
